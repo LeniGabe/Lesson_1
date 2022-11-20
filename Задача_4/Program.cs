@@ -1,5 +1,7 @@
 ﻿//Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
 
+try
+{
 Console.WriteLine("Введите первое число");
 int a = Convert.ToInt32(Console.ReadLine());
 
@@ -30,3 +32,8 @@ if(c > max)
 }
 
 Console.WriteLine("Наибольшее число " + max);
+}
+catch
+{
+    Console.WriteLine("Вы ввели некоректные данные");
+}
